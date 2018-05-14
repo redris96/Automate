@@ -34,6 +34,7 @@ def check_available(movie_list, movie):
 	for i in movie_list:
 		sim = similar(movie,i[0])
 		if sim == 1:
+			max_val = 1
 			result = i
 			break
 		elif sim > max_val:
