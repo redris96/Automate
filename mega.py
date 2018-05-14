@@ -28,9 +28,7 @@ def get_html(session, URL):
 	r = session.get(URL)
 	return r.text.encode('utf-8')
 
-def parse_html(file):
-	with open(file, 'r') as myfile:
-		html=myfile.read()
+def parse_html(html):
 	soup = BeautifulSoup(html, 'html.parser')
 	a = soup.find_all("div", {"class":"forumbg"})
 	text = a[1]
@@ -49,14 +47,9 @@ def parse_html(file):
 
 	return content
 
-def print_top(session, url, file_name, top):
+def print_top(session, url, top):
 	html = get_html(session, url)
-
-	file = open(file_name, "w")
-	file.write(html)
-	file.close()
-
-	content = parse_html(file_name)
+	content = parse_html(html)
 	print tabulate(content[:top], headers=['Name', 'Views', 'URL'])
 
 def main():
@@ -71,12 +64,12 @@ def main():
 	session = login()
 
 	print "Movies"
-	print_top(session, movies_url, "movies.html", top)
+	print_top(session, movies_url, top)
 
 	print "\n###################################################\n"
 
 	print "Tv Shows"
-	print_top(session, tv_url, "tv.html", top)
+	print_top(session, tv_url, top)
 
 
 if __name__ == '__main__':
