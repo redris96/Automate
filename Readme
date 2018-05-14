@@ -21,3 +21,13 @@ It gets the top x posts under Movies/"720p / 1080p" and Tv/"720p / 1080p" along 
 Usage:
 python mega.py [<top>]
 top: "Integer", to get top x posts. [optional, default=5]
+
+bookmyshow.py:
+usage: python bookmyshow.py "movie name"
+It will check if the given movie is in theatres or not and will give you the link for booking if it is already out.
+Features: Even if the movie name is typed incorrectly, it will give the closest matching result.
+
+NOTE: If the movie name has spaces, please use "". The full movie name must be given as the first argument.
+
+usage: python bookmyshow.py
+Will show all currently showing movies along with their URLs.
