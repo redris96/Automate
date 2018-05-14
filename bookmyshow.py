@@ -45,10 +45,13 @@ def check_available(movie_list, movie):
 	elif max_val > 0.7:
 		print "Did you mean " + result[0] + "?"
 		print_result(result)
-	else:
+	elif max_val > 0.4:
 		print "Sorry " + movie + " is not out yet."
 		print "Showing closest match with similarity ", max_val
 		print_result(result)
+	else:
+		print "Sorry " + movie + " is not out yet."
+		print "To see all running movies do: python bookmyshow.py"
 
 def get_match(url, movie):
 	html = get_html(url)
