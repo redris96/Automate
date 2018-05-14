@@ -1,0 +1,18 @@
+A collection of scripts which automate routine stuff I do.
+
+To install pre-requisites do:
+bash install.sh
+
+Info
+mega.py:
+pre-requisites:
+1. Create and account on "https://forum.snahp.it/"
+2. Create a file called "config.py" to hold your username and password.
+	The contents of the file should be:
+	"""
+	username = "<your_username>"
+	password = "<your_password>"
+	"""
+
+The main source for the links is "https://forum.snahp.it/"
+It gets the top x posts under Movies/"720p / 1080p" and Tv/"720p / 1080p" along with names, views and the post URL.
