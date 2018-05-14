@@ -4,6 +4,7 @@ To install pre-requisites do:
 bash install.sh
 
 Info
+
 mega.py:
 pre-requisites:
 1. Create and account on "https://forum.snahp.it/"
@@ -16,3 +17,7 @@ pre-requisites:
 
 The main source for the links is "https://forum.snahp.it/"
 It gets the top x posts under Movies/"720p / 1080p" and Tv/"720p / 1080p" along with names, views and the post URL.
+
+Usage:
+python mega.py [<top>]
+top: "Integer", to get top x posts. [optional, default=5]
