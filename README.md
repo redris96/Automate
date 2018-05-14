@@ -1,12 +1,15 @@
-#Automate
+Automate
+========
 A collection of scripts which automate routine stuff I do.
 
 To install pre-requisites do:
 bash install.sh
 
-##Info
+Info
+====
 
-###mega.py
+mega.py
+=======
 pre-requisites:
 1. Create and account on "https://forum.snahp.it/"
 2. Create a file called "config.py" to hold your username and password.
@@ -25,7 +28,8 @@ python mega.py [<top>]
 ```
 top: "Integer", to get top x posts. [optional, default=5]
 
-###bookmyshow.py
+bookmyshow.py
+=============
 usage: 
 ```
 python bookmyshow.py "movie name"
@@ -33,12 +37,15 @@ python bookmyshow.py "movie name"
 It will check if the given movie is in theatres or not and will give you the link for booking if it is already out.
 Features: Even if the movie name is typed incorrectly, it will give the closest matching result.
 
-NOTE: If the movie name has spaces, please use "". The full movie name must be given as the first argument.
+NOTE
+---- 
+If the movie name has spaces, please use "". The full movie name must be given as the first argument.
 
 usage: python bookmyshow.py
 Will show all currently showing movies along with their URLs.
 
-###Cron
+Cron
+-----
 If you want to keep running it every x minutes, create a cronjob using:
 ```
 crontab -e
@@ -61,7 +68,8 @@ MAILTO=<you_email@domain.com>
 And follow this tutorial to set up a working mailing system through gmail:
 https://www.linode.com/docs/email/postfix/configure-postfix-to-send-mail-using-gmail-and-google-apps-on-debian-or-ubuntu/
 
-###NOTE 
+NOTE 
+----
 Whenever there is an output, cron will send a mail. Even when the movie is not out, you'll get a mail. To stop this, remove (or comment) the print statements for the case when movie is not found:
 i.e in file bookmyshow.py, comment lines 48-51
 ```
