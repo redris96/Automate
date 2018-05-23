@@ -78,3 +78,17 @@ i.e in file bookmyshow.py, comment lines 48-51
 # 	print "Showing closest match with similarity ", max_val
 # 	print_result(result)
 ```
+
+webnovel.py
+===========
+usage: 
+```
+python webnovel.py <bookid>
+```
+This script will automatically the get the chapters for the book from "https://www.webnovel.com/" specified and create an epub file.
+
+NOTE
+---- 
+To get the bookid of a book, open the main page of the book on "https://www.webnovel.com/". The resulting url should be of the form:
+"https://www.webnovel.com/book/<bookid>/<name>"
+From there, you can get the bookid for a particular book.
