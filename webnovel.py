@@ -1,9 +1,6 @@
 import requests
 import sys
 from bs4 import BeautifulSoup
-from operator import itemgetter
-from tabulate import tabulate
-import config
 import json
 from ebooklib import epub
 
