@@ -53,7 +53,7 @@ crontab -e
 And add the frequency and location of script.
 For example The following runs the script every 5 minutes
 ```
-*/5 * * * * python /home/rishith/dev/automate/bookmyshow.py Mahanoti
+*/5 * * * * python /home/rishith/dev/automate/bookmyshow.py "Infinity War"
 ```
 
 If you want the output to be mailed to you, when the movie is out, then do:
@@ -83,12 +83,12 @@ webnovel.py
 ===========
 usage: 
 ```
-python webnovel.py <bookid>
+python webnovel.py <bookId>
 ```
 This script will automatically the get the chapters for the book from "https://www.webnovel.com/" specified and create an epub file.
 
 NOTE
 ---- 
-To get the bookid of a book, open the main page of the book on "https://www.webnovel.com/". The resulting url should be of the form:
-"https://www.webnovel.com/book/<bookid>/<name>"
+To get the bookid of a book, open the main page of the book on the webnovel.com website. The resulting url should be of the form:
+"https://www.webnovel.com/book/<bookId>/<bookName>"
 From there, you can get the bookid for a particular book.
