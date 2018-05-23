@@ -90,5 +90,5 @@ This script will automatically the get the chapters for the book from "https://w
 NOTE
 ---- 
 To get the bookid of a book, open the main page of the book on the webnovel.com website. The resulting url should be of the form:
-"https://www.webnovel.com/book/<bookId>/<bookName>"
+"https://www.webnovel.com/book/bookId/bookName/"
 From there, you can get the bookid for a particular book.
