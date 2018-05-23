@@ -53,7 +53,7 @@ crontab -e
 And add the frequency and location of script.
 For example The following runs the script every 5 minutes
 ```
-*/5 * * * * python /home/rishith/dev/automate/bookmyshow.py Mahanoti
+*/5 * * * * python /home/rishith/dev/automate/bookmyshow.py "Infinity War"
 ```
 
 If you want the output to be mailed to you, when the movie is out, then do:
