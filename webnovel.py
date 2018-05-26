@@ -27,7 +27,7 @@ def get_chapters(session, URL, bookid):
 	response = session.get(URL, params=data)
 	data = json.loads(response.text)
 	data = data["data"]
-	name = data["bookInfo"]["bookName"]
+	name = data["bookInfo"]["bookName"].encode("utf-8")
 	chapters = []
 	for item in data["volumeItems"]:
 		chapters.extend(item["chapterItems"])
