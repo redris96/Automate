@@ -67,7 +67,7 @@ def create_book(name, chapters, bookid, session):
 	book.spine.extend(chap_list)
 
 	# write to the file
-	epub.write_epub(name+'.epub', book, {})
+	epub.write_epub('ebooks/' + name +'.epub', book, {})
 
 def get_book(session, bookid):
 	URL = 'https://www.webnovel.com/apiajax/chapter/GetChapterList'
