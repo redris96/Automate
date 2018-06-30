@@ -58,6 +58,10 @@ def main():
 
 	if len(sys.argv) > 1:
 		top = int(sys.argv[1])
+		if len(sys.argv) == 3:
+			page = '&start=' + str((int(sys.argv[2])-1)*50)
+			movies_url += page
+			tv_url += page
 	else:
 		top = 5
 
