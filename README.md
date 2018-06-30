@@ -24,9 +24,10 @@ It gets the top x posts under Movies/"720p / 1080p" and Tv/"720p / 1080p" along 
 
 Usage:
 ```
-python mega.py [<top>]
+python mega.py [<top> <page>]
 ```
 top: "Integer", to get top x posts. [optional, default=5]
+page: The page number of the forum. [optional, starts from 2. Have to specify <top> to use this]
 
 bookmyshow.py
 =============
