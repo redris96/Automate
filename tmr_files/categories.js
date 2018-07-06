@@ -1,0 +1,1 @@
+jQuery(function(){jQuery('.last_post_time').each(function(k,v){var e=jQuery(v);var unix=e.data('unix');var time=moment.unix(parseFloat(unix)).fromNow();e.text(time);});});
