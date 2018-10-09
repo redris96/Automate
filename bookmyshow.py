@@ -16,7 +16,7 @@ def similar(a, b):
 def parse_html(html):
 	soup = BeautifulSoup(html, 'html.parser')
 	now_showing = soup.find("section", {"class":"now-showing"})
-	titles = now_showing.find_all("a", {"class":"__movie-name"})
+	titles = now_showing.find_all("a")
 
 	movie_list = []
 
